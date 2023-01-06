@@ -1,0 +1,65 @@
+$iconWidth: 50px;
+
+.speech {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 68, 14, 0.8)),
+    var(--image-url) center center;
+  background-size: cover;
+}
+
+.example-card {
+  background-color: #e8e8e8;
+  margin: 10px auto 0 auto;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(3, 44, 12, 0.3),
+    0 6px 20px 0 rgba(3, 44, 12, 0.5);
+}
+
+// mat-card-header {
+//   background-color: green;
+// }
+
+.img-box {
+  height: 600px;
+  background-image: url("../../../assets/img/excos/jtogunniyi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center center;
+  // border-radius: 50%;
+}
+
+.first-con {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info-head {
+  font-weight: normal;
+}
+
+.info-head,
+.info-subhead {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+strong {
+  color: #43a047;
+}
+
+@media all and (max-width: 699px) {
+  .speech {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 68, 14, 0.8));
+  }
+
+  .example-card {
+    width: 90%;
+  }
+
+  .mat-display-1 {
+    font-size: 25px;
+  }
+}

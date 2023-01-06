@@ -1,0 +1,78 @@
+.content {
+  padding: 16px;
+}
+
+.container > mat-card {
+  border-radius: 20px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.about-text {
+  text-align: center;
+  // color: white;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 68px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #bfcf25;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-heading {
+  padding-bottom: 30px;
+}
+
+.contact-heading h2 {
+  font-size: 32px;
+}
+
+.contact-heading h3 {
+  font-size: 22px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.contact-form > * {
+  width: 100%;
+}
+
+@media all and (max-width: 699px) {
+  .mat-display-1 {
+    font-size: 25px;
+  }
+
+  .about-text {
+    font-size: 13px;
+  }
+}

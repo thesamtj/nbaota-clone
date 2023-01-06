@@ -1,0 +1,97 @@
+$iconWidth: 50px;
+
+.sc-container {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin: 10px auto 0 auto;
+  width: 70%;
+}
+
+.sc-items1 {
+  flex: 0 1 auto;
+  width: 70%;
+  margin: 0.3em;
+}
+
+.sc-items2 {
+  flex: 0 1 auto;
+  width: 30%;
+  margin: 0.3em;
+}
+
+.example-card {
+  max-width: 600px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.example2-card {
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// mat-card-header {
+//   background-color: green;
+// }
+
+.img-box {
+  height: 600px;
+  background-image: url("../../../../assets/img/honorary/hj_olugbemi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.example-header-image {
+  background-image: url("../../../../assets/img/nbalogoc.png");
+  background-size: cover;
+}
+
+.first-con {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info-head {
+  font-weight: normal;
+}
+
+.info-head,
+.info-subhead {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+@media all and (max-width: 699px) {
+  // Adjust for mobile
+
+  .sc-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mat-card-title {
+    font-size: 12px;
+  }
+
+  .mat-card-subtitle {
+    font-size: 10px;
+  }
+
+  .sc-items1 {
+    width: 100%;
+  }
+
+  .sc-items2 {
+    width: 100%;
+  }
+
+  .img-box {
+    background-position: center center;
+    // Center position
+  }
+}

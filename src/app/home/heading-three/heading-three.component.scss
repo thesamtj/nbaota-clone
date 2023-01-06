@@ -1,0 +1,86 @@
+// .card {
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
+
+.example-header-image {
+  background-image: url("../../../assets/img/nbalogoc.png");
+  background-size: cover;
+}
+
+.img-box1 {
+  height: 300px;
+  background-image: url("../../../assets/img/constituition.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30%;
+}
+
+.img-box2 {
+  height: 300px;
+  background-image: url("../../../assets/img/excos/chairman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center center;
+  border-radius: 30%;
+}
+
+.img-box3 {
+  height: 300px;
+  background-image: url("../../../assets/img/utterbarc.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30%;
+}
+
+mat-card {
+  background-color: #a5d6a7;
+}
+
+img {
+  border-radius: 30%;
+}
+
+.mat-headline {
+  color: #43a047;
+  font-weight: bold;
+}
+
+.heading3-row {
+  margin-top: 20px;
+}
+
+.heading3-button {
+  margin-top: 10px;
+}
+
+.heading3-section {
+  text-align: center;
+}
+
+.heading3-heading {
+  padding-bottom: 30px;
+}
+
+.heading3-heading h2 {
+  font-size: 32px;
+}
+
+.heading3-heading h3 {
+  font-size: 22px;
+}
+
+.text-muted {
+  font-size: 3em;
+  color: #43a047;
+}
+
+.read-more {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.button2 {
+  float: right;
+}

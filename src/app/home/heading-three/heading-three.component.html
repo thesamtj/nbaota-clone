@@ -1,0 +1,123 @@
+<section
+  id="heading3"
+  [ngStyle.lt-md]="{ 'margin-top': '30px', 'margin-bottom': '30px' }"
+>
+  <div class="container heading3-card">
+    <div
+      fxLayout="row"
+      fxLayout.lt-sm="column"
+      fxLayoutWrap="wrap"
+      fxLayoutGap="30px"
+      fxLayoutGap.sm="8px"
+    >
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0 card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>About Us</mat-card-title>
+            <!-- <mat-card-subtitle>The Utter Bar</mat-card-subtitle> -->
+          </mat-card-header>
+          <!-- <img mat-card-image src="assets/img/1.jpg" /> -->
+          <div mat-card-image class="img-box1"></div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Brief History
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              Upon the creation of Ota Judicial Division which was carved out
+              from Ilaro Judicial Division in <strong>1989</strong>,...
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button
+              class="heading3-button"
+              routerLink="/about-us"
+              mat-icon-button
+              matTooltip="Read More"
+            >
+              <span class="read-more">Continue Reading</span
+              ><mat-icon class="text-muted">read_more</mat-icon>
+            </button>
+            <!-- <button class="heading3-button" mat-icon-button>
+              <mat-icon class="text-muted">share</mat-icon>
+            </button> -->
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0 card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>The Management</mat-card-title>
+            <!-- <mat-card-subtitle
+              >Joseph Taiwo Ogunniyi (Chairman)</mat-card-subtitle
+            > -->
+          </mat-card-header>
+          <!-- <img mat-card-image src="assets/img/2.jpg" /> -->
+          <div mat-card-image class="img-box2"></div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Inaugural Speech
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              "...I thank every eligible voter who took time out of their busy schedule to vote at the <strong>NBA Ota Branch</strong> election of today, <i>28, 2022</i>..."
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button
+              class="heading3-button"
+              routerLink="/inaugural-speech"
+              mat-icon-button
+              matTooltip="Read More"
+            >
+              <span class="read-more">Continue Reading</span
+              ><mat-icon class="text-muted">read_more</mat-icon>
+            </button>
+            <button
+              class="heading3-button button2"
+              mat-raised-button
+              color="primary"
+              routerLink="/chairman"
+              matTooltip="Chairman's Profile"
+            >
+              View Profile
+            </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="33.33" [about]>
+        <mat-card class="p-0 m-0 card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Members' Directory</mat-card-title>
+            <!-- <mat-card-subtitle
+              >Learned silks of the Utter Bar</mat-card-subtitle
+            > -->
+          </mat-card-header>
+          <!-- <img mat-card-image src="assets/img/3.jpg" /> -->
+          <div mat-card-image class="img-box3"></div>
+          <mat-card-content>
+            <h5 class="mat-headline" [ngStyle.sm]="{ 'font-size': '16px' }">
+              Members' Directory
+            </h5>
+            <p class="mat-subheading-2" [ngStyle.sm]="{ 'font-size': '12px' }">
+              A brief and concise compendium of all registered and duly
+              recognized members of the Utter Bar
+            </p>
+            <mat-divider class="mb-1"></mat-divider>
+            <button
+              class="heading3-button"
+              routerLink="/members"
+              mat-icon-button
+              matTooltip="Find A Lawyer"
+            >
+              <span class="read-more">Find A Lawyer</span
+              ><mat-icon class="text-muted">search</mat-icon>
+            </button>
+            <!-- <button class="heading3-button" mat-icon-button>
+              <mat-icon class="text-muted">share</mat-icon>
+            </button> -->
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

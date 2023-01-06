@@ -1,0 +1,51 @@
+<section
+  id="heading"
+  class="mat-typography heading1"
+  style="--image-url: url('../../../assets/img/heading/law3.gif');"
+>
+  <!-- <h2>Banner</h2> -->
+  <div class="container">
+    <div
+      class="heading-section"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
+        <h1
+          [ngStyle.xs]="{ 'font-size': '32px' }"
+          [ngStyle.sm]="{ 'font-size': '42px' }"
+          class="an-1"
+        >
+          Nigerian Bar Association, Ota Branch
+        </h1>
+      </div>
+      <div [class.animated]="isSubheading" [class.fadeInRight]="isSubheading">
+        <h2
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          You are most welcome to the official website of the Nigerian Bar
+          Association, Ota Branch
+        </h2>
+      </div>
+      <div
+        class="buttons"
+        fxLayout="row"
+        [class.animated]="isHeadingBtn"
+        [class.fadeIn]="isHeadingBtn"
+        [class.heading-btn]="isHeadingBtn"
+      >
+        <a class="heading-button-left" mat-flat-button routerLink="/members">
+          Find A Lawyer
+        </a>
+        <a
+          class="heading-button-right"
+          mat-stroked-button
+          color="accent"
+          routerLink="/about-us"
+          >Discover
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

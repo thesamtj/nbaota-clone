@@ -1,0 +1,36 @@
+// Include material themeing functions.
+@import "~@angular/material/theming";
+@import "./app/navigation/header/header.component.scss";
+
+// Include non-theme styles for core.
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-green, 700, 300, 900);
+$my-theme-accent: mat-palette($mat-green, A100, 50, A400);
+$my-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+@include angular-material-theme($my-theme);
+@include header-component-theme($my-theme);
+
+/* ------ navigation -------- */
+
+// .navigation-toolbar {
+//   background-color: mat-color($my-theme-primary);
+// }
+
+/* ------ about hover effect -------- */
+
+.about-hover-effect {
+  @include mat-elevation-transition;
+  @include mat-elevation(8);
+}
+
+.about-hover-effect .mat-card {
+  background-color: #bfcf25;
+}
+
+.about-hover-effect i {
+  color: mat-color($my-theme-accent, A700);
+}

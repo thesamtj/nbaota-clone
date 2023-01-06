@@ -1,0 +1,56 @@
+<div mat-dialog-container *ngIf="!loading" class="mat-container">
+  <h4 mat-dialog-title>{{ memberItem.name }}</h4>
+
+  <!-- <div mat-card-avatar [ngStyle]="{'background-image': 'url('+memberItem.imgUrl+')'}" class="example-header-image"></div> -->
+  <!-- <img
+  mat-card-image
+  class="example-card-image"
+  [src]="scream.userImage"
+  alt="Post's image"
+/> -->
+
+  <mat-dialog-content>
+    <div class="info">
+      <h5 class="info-head">Year Of Call</h5>
+      <span class="info-subhead">{{ memberItem.yoc }}</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="info">
+      <h5 class="info-head">Scn</h5>
+      <span class="info-subhead">
+        {{ memberItem.scn }}
+      </span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="info">
+      <h5 class="info-head">Email</h5>
+      <span class="info-subhead">{{ memberItem.email }}</span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="info">
+      <h5 class="info-head">Web Address</h5>
+      <a
+        *ngIf="memberItem.website"
+        [href]="memberItem.website"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="info-subhead"
+        >{{ memberItem.website }}</a
+      >
+      <a
+        *ngIf="!memberItem.website"
+        [href]="memberItem.website"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="info-subhead"
+        >-------</a
+      >
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="mat-raised-button" mat-fab color="warn" (click)="close()">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-dialog-actions>
+</div>
+<mat-spinner *ngIf="loading"></mat-spinner>

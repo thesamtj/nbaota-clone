@@ -1,0 +1,67 @@
+<section
+  class="chairmen"
+  style="--image-url: url('../../../assets/img/passing_batonc.png');"
+>
+  <h1
+    class="mat-display-1"
+    style="text-align: center; padding-top: 2rem; color: #bfcf25;"
+  >
+    CHAIRMEN AND SECRETARIES
+  </h1>
+
+  <div class="successivechairmen">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>SN</th>
+        <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="chairman">
+        <th mat-header-cell *matHeaderCellDef>CHAIRMEN</th>
+        <td mat-cell *matCellDef="let element">{{ element.chairman }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="secretary">
+        <th mat-header-cell *matHeaderCellDef>SECRETARIES</th>
+        <td mat-cell *matCellDef="let element">{{ element.secretary }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="year">
+        <th mat-header-cell *matHeaderCellDef>YEARS</th>
+        <td mat-cell *matCellDef="let element">{{ element.year }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <div style="padding-bottom: 15px;">
+      <h3 style="color: #f00b0b;">*Notes</h3>
+      <ul style="color: white;">
+        <li style="margin-bottom: 10px;">
+          There was a delay in conducting election between
+          <strong style="color: #bfcf25;">1998 to 1999</strong>. This was the
+          period late
+          <strong style="color: #bfcf25;">Zakariyau</strong> initiated an action at the High
+          Court of Justice, Ota in respect of the affairs of NBA, Ota Branch
+        </li>
+        <li style="margin-bottom: 5px;">
+          It is also worth mentioning that from year
+          <span style="color: #bfcf25;"> 2011 to 2012</span>, there was a
+          Caretaker Committee headed by
+          <strong style="color: #bfcf25;">Otunba Olumide Akinbinu</strong> as
+          Chairman and
+          <strong style="color: #bfcf25;">Adebayo Adesanya, Esq.</strong> as
+          Secretary
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

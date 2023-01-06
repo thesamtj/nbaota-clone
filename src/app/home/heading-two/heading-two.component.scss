@@ -1,0 +1,77 @@
+.about2 {
+  // background-color: green;
+  padding: 10px 50px;
+  position: relative;
+  z-index: 3;
+  margin-top: -130px;
+}
+
+.card {
+  border-radius: 120px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 68, 14, 0.8)),
+    var(--image-url) center center;
+  // background-size: cover;
+  //  #b9f6ca alternative color;
+  // box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+  text-align: center;
+}
+
+.about-heading {
+  padding-bottom: 30px;
+}
+
+.about-heading h2 {
+  font-size: 32px;
+}
+
+.about-heading h3 {
+  font-size: 22px;
+}
+
+.about-text {
+  text-align: center;
+  color: white;
+}
+
+.header {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 68px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #bfcf25;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+@media all and (max-width: 699px) {
+  .about2 {
+    margin-top: -100px;
+  }
+}

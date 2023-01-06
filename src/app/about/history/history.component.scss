@@ -1,0 +1,104 @@
+$iconWidth: 50px;
+
+.history {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 68, 14, 0.8)),
+    var(--image-url) center center;
+  background-size: cover;
+}
+
+// background-image: url('../../../assets/img/nbalogoc.png');
+
+.example-card {
+  background-color: #e8e8e8;
+  margin: 10px auto 0 auto;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(3, 44, 12, 0.3),
+    0 6px 20px 0 rgba(3, 44, 12, 0.5);
+}
+
+// mataccordion
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+// mat-card-header {
+//   background-color: green;
+// }
+
+.img-box {
+  height: 600px;
+  background-image: url("../../../assets/img/constituition.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  // border-radius: 50%;
+}
+
+.first-con {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.info-head {
+  font-weight: normal;
+}
+
+.info-head,
+.info-subhead {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.expand {
+  color: #bfcf25;
+}
+
+mat-panel-title {
+  color: #43a047;
+}
+
+mat-expansion-panel-header {
+  background: #0f0f0f0a;
+}
+
+.mat-expansion-panel
+  .mat-expansion-panel-header.cdk-keyboard-focused:not([aria-disabled="true"]),
+.mat-expansion-panel
+  .mat-expansion-panel-header.cdk-program-focused:not([aria-disabled="true"]),
+.mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background: #bfcf25;
+}
+
+@media all and (max-width: 699px) {
+  .history {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(5, 68, 14, 0.8));
+  }
+
+  .example-card {
+    width: 90%;
+  }
+
+  .mat-display-1 {
+    font-size: 25px;
+  }
+}

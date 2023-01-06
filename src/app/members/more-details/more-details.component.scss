@@ -1,0 +1,47 @@
+.mat-container {
+  text-align: center;
+}
+
+.mat-dialog-title {
+  font-size: 16px;
+  color: #1e4b20;
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 10px;
+}
+
+.info-head {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.info-subhead {
+  font-size: 15px;
+  color: #43a047;
+  font-weight: bold;
+}
+
+mat-icon {
+  font-weight: bold;
+}
+
+.mat-spinner {
+  margin: 10% auto;
+}
+
+// .dialog-action {
+//   margin-top: 10px;
+// }
+
+@media all and (max-width: 699px) {
+  .mat-dialog-title {
+    font-size: 13px;
+  }
+
+  .info-head,
+  .info-subhead {
+    font-size: 12px;
+  }
+}

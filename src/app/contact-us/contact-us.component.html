@@ -1,0 +1,165 @@
+<section id="contact">
+  <h1
+    class="mat-display-1"
+    style="text-align: center; padding-top: 2rem; color: #43a047;"
+  >
+    CONTACT US
+  </h1>
+  <div class="container">
+    <mat-card
+      class="card"
+      fxLayout="row"
+      fxLayout.lt-md="column"
+      fxLayoutWrap="nowrap"
+      fxLayoutGap="30px"
+    >
+      <div fxFlex="33.33">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="center center"
+          [ngStyle.xs]="{ padding: '0 60px' }"
+        >
+          <div>
+            <i [ngStyle.lt-md]="{ 'font-size': '48px' }" class="material-icons"
+              >contact_mail</i
+            >
+          </div>
+          <span fxFlex="30px"></span>
+          <!-- <h2 class="about-text header">Email</h2> -->
+          <span fxFlex="10px"></span>
+          <p class="about-text">
+            nbaota@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div fxFlex="33.33">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="center center"
+          [ngStyle.lt-md]="{ padding: '0 60px' }"
+        >
+          <div>
+            <i [ngStyle.lt-md]="{ 'font-size': '48px' }" class="material-icons"
+              >phone</i
+            >
+          </div>
+          <span fxFlex="30px"></span>
+          <!-- <h2 class="about-text header">Phone</h2> -->
+          <span fxFlex="10px"></span>
+          <p class="about-text">
+            +234 803 360 4432<br />
+            +234 803 317 7789<br />
+          </p>
+        </div>
+      </div>
+
+      <div fxFlex="33.33">
+        <div
+          fxLayout="column"
+          fxLayoutAlign="center center"
+          [ngStyle.xs]="{ padding: '0 60px' }"
+        >
+          <div>
+            <i [ngStyle.lt-md]="{ 'font-size': '48px' }" class="material-icons"
+              >room</i
+            >
+          </div>
+          <span fxFlex="30px"></span>
+          <!-- <h2 class="about-text">Secretariat</h2> -->
+          <span fxFlex="10px"></span>
+
+          <p class="about-text">
+            C/o Cloak Room, <br />
+            High Court, Ota, Premises<br />
+            Idi-Iroko Road, Ota, Ogun State
+          </p>
+        </div>
+      </div>
+    </mat-card>
+
+    <div
+      class="contact-section contact-heading mat-typography"
+      fxLayout="column"
+      fxLayoutAlign="center center"
+    >
+      <div>
+        <h2 [ngStyle.lt-md]="{ 'margin-bottom': '15px', 'font-size': '20px' }">Contact Form</h2>
+      </div>
+      <div>
+        <h3
+          [ngStyle.xs]="{ 'font-size': '18px' }"
+          [ngStyle.sm]="{ 'font-size': '22px' }"
+        >
+          For general information, enquiry, or contact, please send e-mail to:
+          <span style="color: #43a047;">nbaota@gmail.com</span>
+        </h3>
+      </div>
+    </div>
+
+    <form class="formwidth" (ngSubmit)="onSubmit()">
+      <div
+        class="contact-form"
+        [ngStyle.xs]="{ 'padding-left': '50px', 'padding-right': '50px' }"
+        [ngStyle.sm]="{ 'padding-left': '100px', 'padding-right': '100px' }"
+        [ngStyle.md]="{ 'padding-left': '150px', 'padding-right': '150px' }"
+        [ngStyle.lg]="{ 'padding-left': '200px', 'padding-right': '200px' }"
+      >
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Please enter your name </mat-label>
+          <input
+            matInput
+            placeholder="Name"
+            [formControl]="nameFormControl"
+            [errorStateMatcher]="matcher"
+          />
+          <mat-error *ngIf="nameFormControl.hasError('required')">
+            Name is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Please enter your phone </mat-label>
+          <input
+            matInput
+            placeholder="Phone"
+            [formControl]="phoneFormControl"
+            [errorStateMatcher]="matcher"
+          />
+          <mat-error *ngIf="phoneFormControl.hasError('required')">
+            Phone is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" color="accent">
+          <mat-label>Please enter your email </mat-label>
+          <input
+            matInput
+            placeholder="Email"
+            [formControl]="emailFormControl"
+            [errorStateMatcher]="matcher"
+          />
+          <mat-error
+            *ngIf="
+              emailFormControl.hasError('email') &&
+              !emailFormControl.hasError('required')
+            "
+          >
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <br />
+
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <button mat-raised-button color="accent" type="submit">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
