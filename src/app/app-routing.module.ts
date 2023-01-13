@@ -24,7 +24,8 @@ const routes: Routes = [
   { path: 'chairman', component: ChairmanProfileComponent },
   { path: 'vice-chairman', component: ViceChairmanProfileComponent },
   { path: 'inaugural-speech', component: InuagralSpeechComponent },
-  { path: '**', redirectTo: '/home' }
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
