@@ -10,7 +10,6 @@ import {ViceChairmanProfileComponent} from './branch/vice-chairman-profile/vice-
 import { InuagralSpeechComponent } from './branch/inuagral-speech/inuagral-speech.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   {
     path: 'about-us',
@@ -25,7 +24,7 @@ const routes: Routes = [
   { path: 'vice-chairman', component: ViceChairmanProfileComponent },
   { path: 'inaugural-speech', component: InuagralSpeechComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: '**', component: HomeComponent }
+  { path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
